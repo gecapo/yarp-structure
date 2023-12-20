@@ -18,4 +18,6 @@ app.MapGet("/products", getProducts);
 var getProductById = async (Guid productId) => await Task.FromResult(productId);
 app.MapGet("/products/{productId}", getProductById);
 
+app.UseHttpsRedirection();
+
 app.Run();

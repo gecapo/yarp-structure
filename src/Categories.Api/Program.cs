@@ -18,4 +18,6 @@ app.MapGet("/categories", getCategories);
 var getCategoryById = async (Guid categoryId) => await Task.FromResult(categoryId);
 app.MapGet("/categories/{categoryId}", getCategoryById);
 
+app.UseHttpsRedirection();
+
 app.Run();
