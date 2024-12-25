@@ -1,4 +1,4 @@
-# YARP API Gateway Structure
+# YARP API Gateway Template Structure
 
 Reverse proxy 
 - `https://localhost:7090`
